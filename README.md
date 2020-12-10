@@ -10,13 +10,13 @@
 
 ## Simple shell that behaves like bash and contains these commands built-in :
 
- 1.  echo with option ’-n’.   
- 2.  cd with only a relative or absolute path.
- 3.  pwd without any options.
- 4.  export without any options.
- 5.  unset without any options.
- 6.  env without any options and any arguments.
- 7.  exit without any options.
+ 1.  `echo` with option `-n`.   
+ 2.  `cd` with only a relative or absolute path.
+ 3.  `pwd` without any options.
+ 4.  `export` without any options.
+ 5.  `unset` without any options.
+ 6.  `env` without any options and any arguments.
+ 7.  `exit` without any options.
 
 ## and works with these delimiters :
 
