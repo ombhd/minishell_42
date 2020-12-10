@@ -42,4 +42,4 @@
 ## NB:
 
  - Please, if you have other useful sources, you can send them to me, and thanks in advance.
- - Maybe you will find some special cases doesn't work, please report if there are any.
+ - Maybe you will find some special cases that doesn't work, please report if there are any.
