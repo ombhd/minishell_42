@@ -20,4 +20,14 @@
 • $? work like in bash.  
 • ctrl-C, ctrl-D and ctrl-\ have the same result as in bash.  
 
-## Sources :
+## Some Sources :
+
+https://cdn.discordapp.com/attachments/769898609562746880/776364046945353748/Chapter5-WritingYourOwnShell.pdf.  
+https://cdn.discordapp.com/attachments/769898609562746880/776363294013128734/Shells_SystemCalls_Signals.ppt.  
+https://stackoverflow.com/questions/27161412/how-does-copy-on-write-work-in-fork?rq=1.  
+https://medium.com/@ssreehari/building-a-bash-like-application-e17122609be4.  
+https://linux.die.net/man/2/execve.  
+https://www.cs.purdue.edu/homes/grr/SystemsProgrammingBook/Book/Chapter5-WritingYourOwnShell.pdf.  
+https://cdn.discordapp.com/attachments/769898609562746880/772885775821439036/Shells_SystemCalls_Signals.ppt.  
+https://www.cyberciti.biz/faq/linux-bash-exit-status-set-exit-statusin-bash/.  
+
