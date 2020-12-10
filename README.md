@@ -32,4 +32,4 @@ https://cdn.discordapp.com/attachments/769898609562746880/772885775821439036/She
 https://www.cyberciti.biz/faq/linux-bash-exit-status-set-exit-statusin-bash/.  
 
 ## NB:
-◊ Maybe you will find some special cases doesn't work, please report if if there are any.
+◊ Maybe you will find some special cases doesn't work, please report if there are any.
