@@ -4,7 +4,7 @@
  - Omar BOUYKOURNE &nbsp;&nbsp;@su-omb &nbsp;	:   42login => `obouykou`
  - Yassin SLATI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@sltyassin&nbsp;&nbsp;: 	42login => `yslati`
 
-## subject
+## Subject
 
 [minishell_subject](https://github.com/su-omb/minishell42/blob/main/en.subject.pdf)
 
