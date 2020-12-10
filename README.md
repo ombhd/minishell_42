@@ -2,7 +2,7 @@
 ## Contributors
 
  - Omar BOUYKOURNE &nbsp;&nbsp;@su-omb &nbsp;	:   42login => `obouykou`
- - Yassin SLATI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@sltyassin&nbsp;&nbsp;: 	42login => `yslati`
+ - Yassin SLATI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@sltyassin&nbsp;&nbsp;: 	42login => `yslati`
 
 ## subject
 
