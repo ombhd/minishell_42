@@ -6,7 +6,8 @@
 
 ## subject
 
-minishell_subject
+[minishell_subject](https://github.com/su-omb/minishell42/blob/main/en.subject.pdf)
+
 
 ## Simple shell that behaves like bash and contains these commands built-in :
 
