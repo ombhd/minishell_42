@@ -8,6 +8,12 @@
 
 [minishell_subject](https://github.com/su-omb/minishell42/blob/main/en.subject.pdf)
 
+## How to run
+
+ 1.  `make`  
+ 2.  `./minishell`
+ 3.  Run your commands
+
 ## Simple shell that behaves like bash and contains these commands built-in :
 
  1.  `echo` with option `-n`.   

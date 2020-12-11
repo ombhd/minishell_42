@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: obouykou <obouykou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 14:30:48 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/09 12:39:19 by obouykou         ###   ########.fr       */
+/*   Updated: 2020/12/11 23:01:45 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,9 +75,11 @@ int			minishell(char **env, int step)
 
 int			main(int ac, char **av, char **env)
 {
-	ac = 0;
+	if (ac)
+		ac = 1;
+	if (av)
+		av = NULL;
 	g_ret = 0;
-	av = NULL;
 	signal(SIGINT, handle_sig);
 	signal(SIGQUIT, handle_sig);
 	minishell(env, 0);

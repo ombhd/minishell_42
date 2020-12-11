@@ -38,19 +38,19 @@ all: $(NAME)
 	@echo "\n\033[32m◊◊◊ ------- Minishell has been created successfully ------- ◊◊◊\033[0m\n"
 
 $(NAME): $(OBJECT) $(HEADER) $(FILES)
-	@echo "\n\033[36m◊◊◊ Producin' object files done! ◊◊◊\033[0m\n"
 	@ar -rcs $(LIB) $(OBJECT)
-	@make -C ./libft
+	@echo "\n\033[36m◊◊◊ Producin' object files done! ◊◊◊\033[0m\n"
+	@cd ./libft && make
 	@echo "\n\033[36m◊◊◊ Producin' libft done! ◊◊◊\033[0m\n"
-	@gcc  $(FLAGS) $(MS_MAIN) $(LIBFT) $(LIB) -o $(NAME)
+	@gcc $(FLAGS) $(MS_MAIN) $(LIB) $(LIBFT) -o $(NAME)
 
 %.o:%.c $(HEADER)								
 	@gcc -c $< $(FLAGS) -o $@
 
 clean:
-	@echo "\n\033[36m◊◊◊ Cleanin' object files done! ◊◊◊\033[0m\n"
-	@make fclean -C ./libft
+	@cd ./libft && make fclean
 	@rm -rf $(OBJECT) $(LIB)
+	@echo "\n\033[36m◊◊◊ Cleanin' object files done! ◊◊◊\033[0m\n"
 
 fclean: clean
 	@rm -rf $(NAME)

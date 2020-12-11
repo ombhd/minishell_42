@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: obouykou <obouykou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 11:59:55 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/10 13:22:33 by obouykou         ###   ########.fr       */
+/*   Updated: 2020/12/11 22:59:02 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 # include <signal.h>
 # include <string.h>
 # include <sys/stat.h>
+// # include <sys/types.h>
+# include <sys/wait.h>
 # include "../libft/libft.h"
 
 # define SIZE				16384

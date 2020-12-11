@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+         #
+#    By: obouykou <obouykou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/20 12:40:11 by obouykou          #+#    #+#              #
-#    Updated: 2020/12/08 14:01:08 by obouykou         ###   ########.fr        #
+#    Updated: 2020/12/11 23:25:09 by obouykou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ FLAGS = -Wextra -Werror -Wall
 
 all: $(NAME)
 	@echo > /dev/null
+
 $(NAME): $(OBJECT) $(HEADER)
 	@ar -rcs $(NAME) $(OBJECT)
 

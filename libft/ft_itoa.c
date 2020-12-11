@@ -6,13 +6,13 @@
 /*   By: obouykou <obouykou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 10:21:33 by obouykou          #+#    #+#             */
-/*   Updated: 2019/11/08 21:41:34 by obouykou         ###   ########.fr       */
+/*   Updated: 2020/12/11 23:00:15 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	static	*ft_fill(char *res, long n, int i, int b)
+static	char	*ft_fill(char *res, long n, int i, int b)
 {
 	if (!n)
 	{
