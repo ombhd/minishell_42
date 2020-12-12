@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse_vars.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obouykou <obouykou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 09:48:45 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/11 23:15:02 by obouykou         ###   ########.fr       */
+/*   Updated: 2020/12/12 12:47:19 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,8 +71,13 @@ void	replace_var(t_ms *ms, t_parser *p)
 		return ;
 	else if (p->l == -2)
 		p->l = 0;
-	p->tmp = get_vvalue(ft_strldup(ms->input + p->i, p->l), 
+	p->tmp = get_vvalue(ft_strldup(ms->input + p->i, p->l),
 						p->quote_ig ? ms->env : ms->p_env);
+	if (p->quote_ig && ft_strchr(p->tmp, '"'))
+	{
+		free(p->tmp);
+		p->tmp = get_vvalue(ft_strldup(ms->input + p->i, p->l), ms->p_env);
+	}
 	ms->input = remake_input(ms->input, p->tmp, p->l, &p->i);
 }
 

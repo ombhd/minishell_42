@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obouykou <obouykou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 11:59:55 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/11 22:59:02 by obouykou         ###   ########.fr       */
+/*   Updated: 2020/12/12 12:48:23 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 # include <signal.h>
 # include <string.h>
 # include <sys/stat.h>
-// # include <sys/types.h>
 # include <sys/wait.h>
 # include "../libft/libft.h"
 
