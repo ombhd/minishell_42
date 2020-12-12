@@ -8,7 +8,7 @@
 
 [minishell_subject](https://github.com/su-omb/minishell42/blob/main/en.subject.pdf)
 
-## How to run
+## How to run minishell ?
 
  1.  `make`  
  2.  `./minishell`
