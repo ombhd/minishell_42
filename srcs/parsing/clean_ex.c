@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 13:23:08 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/10 11:54:56 by obouykou         ###   ########.fr       */
+/*   Updated: 2020/12/12 10:38:41 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,7 @@ void	errex(t_ms *ms, int err)
 		ft_putendl_fd("minishell: reading input error", 1);
 	else if (err == SPLT_ERR)
 		ft_putendl_fd("minishell: splitting input error", 1);
+	ms->ret_status = err;
+	ms->ctrl = CTRL_D;
 	ft_exit(ms);
 }
