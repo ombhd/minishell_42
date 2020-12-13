@@ -40,7 +40,7 @@ all: $(NAME)
 $(NAME): $(OBJECT) $(HEADER) $(FILES)
 	@ar -rcs $(LIB) $(OBJECT)
 	@echo "\n\033[36m◊◊◊ Producin' object files done! ◊◊◊\033[0m\n"
-	@cd ./libft && make
+	@cd ./libft && make -s
 	@echo "\n\033[36m◊◊◊ Producin' libft done! ◊◊◊\033[0m\n"
 	@gcc $(FLAGS) $(MS_MAIN) $(LIB) $(LIBFT) -o $(NAME)
 
@@ -48,7 +48,7 @@ $(NAME): $(OBJECT) $(HEADER) $(FILES)
 	@gcc -c $< $(FLAGS) -o $@
 
 clean:
-	@cd ./libft && make fclean
+	@cd ./libft && make -s fclean
 	@rm -rf $(OBJECT) $(LIB)
 	@echo "\n\033[36m◊◊◊ Cleanin' object files done! ◊◊◊\033[0m\n"
 
