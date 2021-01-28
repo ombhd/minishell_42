@@ -30,9 +30,9 @@
  -  Single quotes `'` and double quotes `"` work like in bash except for multiline commands.
  - Redirections `<` `>` `>>` work like in bash except for file descriptor aggregation.
  - Pipes `|` work like in bash.
- - Backslash `\` work like in bash.
+ - Backslash `\` works like in bash.
  - Environment variables (`$` followed by characters) work like in bash.
- - `$?` work like in bash.
+ - `$?` works like in bash.
  - `ctrl-C`, `ctrl-D` and `ctrl-\` have the same result as in bash.
 
 ## Some Sources :
@@ -47,5 +47,5 @@
 
 ## NB:
 
- - Please, if you have other useful sources, you can post them in an issue here in GitHub, and thanks in advance.
+ - Please, if you have other useful sources, you can post them in an issue here in GitHub, thanks in advance.
  - Maybe you will find some special cases that doesn't work, please post an issue if there are any.
