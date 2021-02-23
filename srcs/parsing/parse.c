@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 13:21:10 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/10 11:50:23 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/02/23 13:03:04 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void		make_cmds_lst(t_ms *ms, t_parser *p)
 			if (ft_strchr("|;><", ms->input[p->i]))
 			{
 				make_cmd(ms, p->j, &p->i, ms->input);
-				p->j = p->i + 1 + skip_while(ms->input + p->i + 1, ' ');
+				p->j = p->i + 1 + skip_white_sp(ms->input + p->i + 1);
 			}
 			p->i++;
 		}

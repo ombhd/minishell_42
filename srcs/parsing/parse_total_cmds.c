@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 13:21:10 by obouykou          #+#    #+#             */
-/*   Updated: 2021/02/23 12:33:52 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/02/23 13:02:24 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		sm_finder(char *input, t_parser *p)
 	if (input[p->i] == ';')
 	{
 		p->j = p->i + 1;
-		p->m = p->j + skip_while(input + p->j, ' ');
+		p->m = p->j + skip_white_sp(input + p->j);
 		if (input[p->m] == ';')
 			return (STX_ERR);
 		p->l++;
@@ -56,18 +56,18 @@ int		get_hm_cmds(char *input, t_parser *p)
 
 int		stx_handler(char **input, t_parser *p)
 {
-	int i;
-	char *tmp;
+	// int i;
+	// char *tmp;
 
-	i = 0;
-	while (input[0][i] == ' ' || input[0][i] == '\t')
-		i++;
-	if (i && (tmp = *input))
-	{
-		*input = ft_strdup(*input + i);
-		free(tmp);
-	}
-	p->m = **input;
+	// i = 0;
+	// while (input[0][i] == ' ' || input[0][i] == '\t')
+	// 	i++;
+	// if (i && (tmp = *input))
+	// {
+	// 	*input = ft_strdup(*input + i);
+	// 	free(tmp);
+	// }
+	p->m = input[0][skip_white_sp(*input)];
 	if (!p->m || p->m == ';')
 	{
 		free(*input);
@@ -96,7 +96,7 @@ void	get_cmds_tab(char *input, char **cmd_tab, t_parser *p)
 		if (input[p->i] == ';' && p->slash_ig)
 		{
 			cmd_tab[p->m++] = ft_substr(input, p->j, p->i - p->j);
-			p->j = p->i + 1 + skip_while(input + p->i + 1, ' ');
+			p->j = p->i + 1 + skip_white_sp(input + p->i + 1);
 		}
 	}
 	if (input[p->j])

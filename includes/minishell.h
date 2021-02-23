@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 11:59:55 by obouykou          #+#    #+#             */
-/*   Updated: 2021/02/23 12:30:03 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/02/23 12:59:15 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ void				parse(t_ms *ms);
 char				**parse_split(char const *s, char c, t_ms *ms);
 void				errex(t_ms *ms, int err);
 char				**dup_str_tab(char **arr, char p);
-int					skip_while(char *s, char c);
+int					skip_white_sp(char *s);
 t_cmd				*get_head(t_cmd *cmds, char *err);
 void				parse_d(t_ms *ms);
 void				new_cmd(t_ms *ms, char del, char **tab);

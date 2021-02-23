@@ -6,18 +6,18 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/27 12:04:11 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/10 11:50:50 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/02/23 13:01:10 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int		skip_while(char *s, char c)
+int		skip_white_sp(char *s)
 {
 	int i;
 
 	i = 0;
-	while (s[i] == c)
+	while (s[i] == ' ' || s[i] == '\t')
 		++i;
 	return (i);
 }
