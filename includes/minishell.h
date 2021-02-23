@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 11:59:55 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/12 12:48:23 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/02/23 12:30:03 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@
 #  define BUFFER_SIZE 		1
 # endif
 
-typedef struct		s_parser
+typedef struct s_parser
 {
 	int				i;
 	int				j;
@@ -58,7 +58,7 @@ typedef struct		s_parser
 	char			quote_ig;
 	char			slash_ig;
 	char			*tmp;
-}					t_parser;
+}				t_parser;
 
 typedef struct		s_cmd
 {
