@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 13:21:10 by obouykou          #+#    #+#             */
-/*   Updated: 2020/12/10 11:45:31 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/02/23 12:23:37 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,18 @@ int		get_hm_cmds(char *input, t_parser *p)
 
 int		stx_handler(char **input, t_parser *p)
 {
-	p->m = input[0][skip_while(*input, ' ')];
+	int i;
+	char *tmp;
+
+	i = 0;
+	while (input[0][i] == ' ' || input[0][i] == '\t')
+		i++;
+	if (i)
+	{
+		tmp = *input;
+		*input = ft_strdup(*input + i);
+	}
+	p->m = **input;
 	if (!p->m || p->m == ';')
 	{
 		free(*input);
@@ -103,5 +114,6 @@ int		parse_total_cmds(t_ms *ms)
 	ms->cmd_tab[p.l] = NULL;
 	get_cmds_tab(ms->input, ms->cmd_tab, &p);
 	ms->input = ft_free(ms->input);
+
 	return (0);
 }
