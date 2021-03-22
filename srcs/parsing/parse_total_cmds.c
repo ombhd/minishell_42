@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 13:21:10 by obouykou          #+#    #+#             */
-/*   Updated: 2021/02/23 13:02:24 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/03/22 19:03:17 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,17 +56,6 @@ int		get_hm_cmds(char *input, t_parser *p)
 
 int		stx_handler(char **input, t_parser *p)
 {
-	// int i;
-	// char *tmp;
-
-	// i = 0;
-	// while (input[0][i] == ' ' || input[0][i] == '\t')
-	// 	i++;
-	// if (i && (tmp = *input))
-	// {
-	// 	*input = ft_strdup(*input + i);
-	// 	free(tmp);
-	// }
 	p->m = input[0][skip_white_sp(*input)];
 	if (!p->m || p->m == ';')
 	{

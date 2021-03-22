@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 14:30:48 by obouykou          #+#    #+#             */
-/*   Updated: 2021/02/23 12:16:25 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/03/22 18:40:19 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ void		parse_exec(t_ms *ms)
 				clean_stx_err(ms);
 				break ;
 			}
-			exec_command(ms);
+			if (ms->input[0])
+				exec_command(ms);
 			internal_init(ms);
 		}
 	}
