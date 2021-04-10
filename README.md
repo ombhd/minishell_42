@@ -37,6 +37,7 @@
 
 ## Some Sources :
 
+ - [Unix Processes in C](https://www.youtube.com/watch?v=cex9XrZCU14&list=PLfqABt5AS4FkW5mOn2Tn9ZZLLDwA3kZUY)
  - [Writing your own shell fundamentals](https://www.cs.purdue.edu/homes/grr/SystemsProgrammingBook/Book/Chapter5-WritingYourOwnShell.pdf)
  - [Shell System Calls Signals](https://cdn.discordapp.com/attachments/769898609562746880/776363294013128734/Shells_SystemCalls_Signals.ppt)
  - [How does copy-on-write work in fork?](https://stackoverflow.com/questions/27161412/how-does-copy-on-write-work-in-fork?rq=1)
