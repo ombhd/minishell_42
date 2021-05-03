@@ -6,7 +6,7 @@
 /*   By: obouykou <obouykou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 09:48:45 by obouykou          #+#    #+#             */
-/*   Updated: 2021/05/03 16:58:00 by obouykou         ###   ########.fr       */
+/*   Updated: 2021/05/03 17:55:35 by obouykou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ int		skip_till(char *s, char *set, int quote_ig)
 
 	if (*s == '"' && !quote_ig)
 		return (-2);
-	if (ft_strchr("$\\\" /", *s))
+	if (ft_strchr("$\\\" /", *s) || ft_isdigit(*s))
 		return (-1);
 	i = -1;
 	while (s[++i])
-		if (ft_strchr(set, s[i]))
+		if (ft_strchr(set, s[i]) || !ft_isalnum(s[i]))
 			return (i);
 	return (i);
 }
