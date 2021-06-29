@@ -1,4 +1,4 @@
-# minishell42
+# minishell_42
 ## Contributors
 
  - Omar BOUYKOURNE &nbsp;&nbsp;@su-omb &nbsp;	:   42login => `obouykou`
